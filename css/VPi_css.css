@@ -1,0 +1,70 @@
+/*   ---    Whole Page All Pages   ---   */
+/*   ---    Whole Page All Pages   ---   */
+/*   ---    Whole Page All Pages   ---   */
+
+html {
+	background: #D1D1D1 url(../images/Gray_Background.png) repeat;
+	width: 100%;
+	font-family: 'PT Serif', serif;
+	color: #989898;
+}
+
+a {
+	text-decoration: none;
+	color: #800000;
+}
+
+a:hover {
+	color: #989898;
+}
+
+.container {
+	background: white;
+	overflow: hidden;
+	width: 96%;
+	margin: 1% auto;
+	max-width: 70em;
+}
+
+/*   ---    Header & Navigation   ---   */
+/*   ---    Header & Navigation   ---   */
+
+#logo {
+	width: 30%;
+	margin: 1%;
+}
+
+nav {
+	float: right;
+	margin: 2.5% 0;
+	width: 60.5%;
+	padding-right: 3%;
+}
+
+nav p {
+	display: inline-block;
+	margin: 1% 2%;
+	font-size: 1.1em;
+	float: right;
+}
+
+nav a {
+	color: #797979;
+}
+
+nav a:hover,
+nav a:active {
+	color: #800000;
+}
+
+.drop-down {
+	display: none;
+}
+
+/*   ---    Header Image   ---   ---   */
+/*   ---    Header Image   ---   ---   */
+
+.head-img-container {
+	height: 20em;
+	overflow: hidden;
+}
