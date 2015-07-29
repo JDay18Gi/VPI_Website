@@ -34,6 +34,10 @@ a:hover {
 	margin: 1%;
 }
 
+.hamburger {
+	display: none;
+}
+
 nav {
 	float: right;
 	margin: 2.5% 0;
@@ -45,7 +49,6 @@ nav p {
 	display: inline-block;
 	margin: 1% 2%;
 	font-size: 1.1em;
-	float: right;
 }
 
 nav a {
@@ -57,9 +60,29 @@ nav a:active {
 	color: #800000;
 }
 
+
+/*   ---    DROP DOWN   ---   */
+/*   ---    DROP DOWN   ---   */
+
 .drop-down {
+	position: absolute;
+	right: 36%;
+	background: #EAEAEA;
+	z-index: 1;
 	display: none;
 }
+
+.drop-down p {
+	position: relative;
+	padding: 0.1em 0.25em;
+	display: block;
+	width: 6.5em;
+}
+
+.drop-down p:hover {
+	background: white;
+}
+
 
 /*   ---    Header Image   ---   ---   */
 /*   ---    Header Image   ---   ---   */
@@ -135,6 +158,93 @@ footer {
 	display: inline-block;
 	margin: 15% 2.5em 5% 0;
 }
+
+
+
+
+@media screen and (max-width: 1120px) {
+	.drop-down {
+		right: 34%;
+	}
+}
+
+@media screen and (max-width: 1140px) {
+	.drop-down {
+		right: 32%;
+	}
+}
+
+@media screen and (max-width: 1140px) {
+	.drop-down {
+		right: 32%;
+	}
+}
+
+@media screen and (max-width: 970px) {
+	.drop-down {
+		right: 30%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.drop-down {
+		right: 28%;
+	}
+}
+
+@media screen and (max-width: 815px) {
+	.drop-down {
+		right: 26%;
+	}
+}
+
+@media screen and (max-width: 815px) {
+	.drop-down {
+		right: 24%;
+	}
+}
+
+@media screen and (max-width: 740px) {
+	#logo {
+		width: 60%;
+	}
+
+	nav {
+		display: none;
+	}
+
+	.hamburger {
+		display: inline-block;
+		float: right;
+		width: 20%;
+	}
+
+	.ham-line {
+		height: 2px;
+		width: 10px;
+		margin: 1px;
+		background: red;
+	}
 }
 
 
+@media screen and (max-width: 500px) {
+		#logo {
+		width: 90%;
+		margin: 0 4.5%;
+	}
+
+	.hamburger {
+		float: none;
+		width: 30%;
+		margin: 0 35%;
+	}
+
+	.ham-line {
+		height: 2px;
+		width: 10px;
+		margin: 1px;
+		background: red;
+	}
+}
+}
