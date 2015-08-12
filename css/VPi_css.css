@@ -91,6 +91,7 @@ nav a:active {
 	height: 20em;
 	overflow: hidden;
 	margin: none;
+	width: 100%;
 }
 
 .head-img-container img {
@@ -196,6 +197,10 @@ footer {
 	.drop-down {
 		right: 26%;
 	}
+
+	#home main {
+		margin-top: -5%;
+	}
 }
 
 @media screen and (max-width: 815px) {
@@ -210,7 +215,9 @@ footer {
 	}
 
 	nav {
-		display: none;
+		display: block;
+		width: 90%;
+		/*display: none;*/
 	}
 
 	.hamburger {
@@ -225,11 +232,16 @@ footer {
 		margin: 1px;
 		background: red;
 	}
+
+	#home main {
+		margin-top: -10%;
+	}
 }
 
 
 @media screen and (max-width: 500px) {
-		#logo {
+
+	#logo {
 		width: 90%;
 		margin: 0 4.5%;
 	}
@@ -237,7 +249,7 @@ footer {
 	.hamburger {
 		float: none;
 		width: 30%;
-		margin: 0 35%;
+		margin: -5% 35% -2.5% 35%;
 	}
 
 	.ham-line {
@@ -246,5 +258,46 @@ footer {
 		margin: 1px;
 		background: red;
 	}
+
+	.nav-container p {
+		display: block;
+		text-align: center;
+		font-size: 1.75em;
+		padding: 1.5%;
+		width: 90%;
+		/*display: none;*/
+	}
+
+	#home .head-img-text {
+		width: 100%;
+		left: 0.5em;
+		bottom: 35%;
+	}
+
+	#home main {
+		margin-top: -30%;
+	}
+
+	.left-col,
+	.right-col {
+		display: static;
+		float: none;
+	}
+
+	.left-col {
+		display: none;
+	}
+
+	.right-col {
+		width: 100%;
+	}
+
 }
+
+@media screen and (max-width: 420px) {
+
+	#home main {
+		margin-top: -50%;
+	}
+
 }
