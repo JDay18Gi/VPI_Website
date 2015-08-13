@@ -217,7 +217,7 @@ footer {
 	nav {
 		display: block;
 		width: 90%;
-		/*display: none;*/
+		display: none;
 	}
 
 	.hamburger {
