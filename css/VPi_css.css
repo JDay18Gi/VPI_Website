@@ -83,6 +83,44 @@ nav a:active {
 	background: white;
 }
 
+#menu p {
+	position: relative;
+}
+
+#menu-dd {
+	width: 0;
+	height: 0;
+	display: inline-block;
+	margin: 0;
+	position: absolute;
+
+}
+
+#solution-dd {
+	background: #F1F1F1;
+	padding: 0.5em 0 0 0;
+	margin: 0;
+	width: 7em;
+
+	list-style: none;
+	line-height: 1.75em;
+
+	position: relative;
+	display: none;
+
+	right: 4.5em;
+	top: 3.25em;
+	z-index: 9;
+}
+
+#solution-dd li:hover{
+	background: white;
+	color: #800000;
+}
+
+#solution-dd li{
+	padding-left: 0.5em;
+}
 
 /*   ---    Header Image   ---   ---   */
 /*   ---    Header Image   ---   ---   */
