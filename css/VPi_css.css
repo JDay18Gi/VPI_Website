@@ -26,6 +26,12 @@ a:hover {
 	max-width: 70em;
 }
 
+ul {
+	list-style: none;
+}
+
+
+
 /*   ---    Header & Navigation   ---   */
 /*   ---    Header & Navigation   ---   */
 
@@ -47,7 +53,8 @@ nav {
 
 nav p {
 	display: inline-block;
-	margin: 1% 2%;
+	padding: 1% 2%;
+	margin: 0;
 	font-size: 1.1em;
 }
 
@@ -60,66 +67,31 @@ nav a:active {
 	color: #800000;
 }
 
-
-/*   ---    DROP DOWN   ---   */
-/*   ---    DROP DOWN   ---   */
-
-.drop-down {
-	position: absolute;
-	right: 36%;
-	background: #EAEAEA;
-	z-index: 1;
-	display: none;
-}
-
-.drop-down p {
-	position: relative;
-	padding: 0.1em 0.25em;
-	display: block;
-	width: 6.5em;
-}
-
-.drop-down p:hover {
-	background: white;
-}
-
-#menu p {
-	position: relative;
-}
-
-#menu-dd {
-	width: 0;
-	height: 0;
+#solution-ul {
 	display: inline-block;
+	font-size: 1.1em;
+	padding: 1% 2%;
 	margin: 0;
-	position: absolute;
 
 }
+
+/*   ---    DROP DOWN   ---   */
+/*   ---    DROP DOWN   ---   */
 
 #solution-dd {
-	background: #F1F1F1;
+	position: absolute;
+	z-index: 1;
+	background: #F2F2F2;
 	padding: 0.5em 0 0 0;
-	margin: 0;
-	width: 7em;
-
-	list-style: none;
-	line-height: 1.75em;
-
-	position: relative;
-	display: none;
-
-	right: 4.5em;
-	top: 3.25em;
-	z-index: 9;
+	margin: 0 0 0 0;
 }
 
-#solution-dd li:hover{
-	background: white;
-	color: #800000;
+#solution-dd li {
+	padding: 0.15em 0.5em 0.15em 0.5em;
 }
 
-#solution-dd li{
-	padding-left: 0.5em;
+#solution-dd li:hover {
+	background: #949494;
 }
 
 /*   ---    Header Image   ---   ---   */
@@ -200,52 +172,14 @@ footer {
 
 
 
-
-@media screen and (max-width: 1120px) {
-	.drop-down {
-		right: 34%;
-	}
-}
-
-@media screen and (max-width: 1140px) {
-	.drop-down {
-		right: 32%;
-	}
-}
-
-@media screen and (max-width: 1140px) {
-	.drop-down {
-		right: 32%;
-	}
-}
-
-@media screen and (max-width: 970px) {
-	.drop-down {
-		right: 30%;
-	}
-}
-
-@media screen and (max-width: 900px) {
-	.drop-down {
-		right: 28%;
-	}
-}
-
 @media screen and (max-width: 815px) {
-	.drop-down {
-		right: 26%;
-	}
+
 
 	#home main {
 		margin-top: -5%;
 	}
 }
 
-@media screen and (max-width: 815px) {
-	.drop-down {
-		right: 24%;
-	}
-}
 
 @media screen and (max-width: 740px) {
 	#logo {
@@ -255,7 +189,7 @@ footer {
 	nav {
 		display: block;
 		width: 90%;
-		display: none;
+		/*display: none;*/
 	}
 
 	.hamburger {
@@ -274,6 +208,13 @@ footer {
 	#home main {
 		margin-top: -10%;
 	}
+
+	nav,
+	.nav-container,
+	.nav-container p {
+		width: 98%;
+	}
+
 }
 
 
