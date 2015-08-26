@@ -79,6 +79,7 @@ nav a:active {
 /*   ---    DROP DOWN   ---   */
 
 #solution-dd {
+	display: none;
 	position: absolute;
 	z-index: 1;
 	background: #F2F2F2;
@@ -90,7 +91,8 @@ nav a:active {
 	padding: 0.15em 0.5em 0.15em 0.5em;
 }
 
-#solution-dd li:hover {
+#solution-dd li:hover,
+#solution-ul a li:hover {
 	background: #949494;
 }
 
@@ -174,22 +176,14 @@ footer {
 
 @media screen and (max-width: 815px) {
 
-
 	#home main {
 		margin-top: -5%;
 	}
 }
 
-
 @media screen and (max-width: 740px) {
 	#logo {
 		width: 60%;
-	}
-
-	nav {
-		display: block;
-		width: 90%;
-		/*display: none;*/
 	}
 
 	.hamburger {
@@ -211,8 +205,32 @@ footer {
 
 	nav,
 	.nav-container,
-	.nav-container p {
+	.nav-container p,
+	#solution-ul,
+	#solution-ul li a {
 		width: 98%;
+	}
+
+	nav {
+		display: block;
+		/*display: none;*/
+		text-align: right;
+		background: #E9E9E9;
+	}
+
+	.nav-container a:hover {
+		background-color: #949494;
+	}
+
+	#solution-ul,
+	#solution-dd {
+		padding: 0;
+	}
+
+
+	#solution-dd {
+		display: block;
+		position: static;
 	}
 
 }

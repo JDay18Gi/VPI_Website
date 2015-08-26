@@ -1,13 +1,21 @@
 
 $(document).ready(function(){
 
+
+$(window).resize(function() {
+    if( $(this).width() > 740 ) {
+        // code
+
 	/* drop down for "solutions"*/
-	$("#solution-ul").on("mouseenter", function(){
-		$("#solution-dd").show();
+			$("#solution-ul").on("mouseenter", function(){
+				$("#solution-dd").show();
+			});
+			$("#solution-ul").on("mouseleave", function(){
+				$("#solution-dd").hide();
+			});
+		}
 	});
-	$("#solution-ul").on("mouseleave", function(){
-		$("#solution-dd").hide();
-	});
+
 /*
 	$("#solution-dd").on("mouseenter", function(){
 		$("#solution-dd").show();
