@@ -91,8 +91,7 @@ nav a:active {
 	padding: 0.15em 0.5em 0.15em 0.5em;
 }
 
-#solution-dd li:hover,
-#solution-ul a li:hover {
+#solution-dd li:hover {
 	background: #949494;
 }
 
@@ -213,13 +212,15 @@ footer {
 
 	nav {
 		display: block;
-		/*display: none;*/
+		display: none;
 		text-align: right;
 		background: #E9E9E9;
 	}
 
+	.nav-container p:hover,
 	.nav-container a:hover {
 		background-color: #949494;
+		color: black;
 	}
 
 	#solution-ul,
@@ -227,12 +228,14 @@ footer {
 		padding: 0;
 	}
 
+	#solution-ul a li:hover {
+		background: #949494;
+	}
 
 	#solution-dd {
 		display: block;
 		position: static;
 	}
-
 }
 
 
