@@ -202,7 +202,8 @@ footer {
 		margin-top: -10%;
 	}
 
-	nav,
+/* Mobile Navigation*/
+
 	.nav-container,
 	.nav-container p,
 	#solution-ul,
@@ -213,19 +214,32 @@ footer {
 	nav {
 		display: block;
 		display: none;
+		width: 70%;
+		margin: 1% 15%;
+		padding: 0;
 		text-align: right;
 		background: #E9E9E9;
+	}
+
+	#home .nav-container {
+		margin: 0;
+		list-style-type: none;
 	}
 
 	.nav-container p:hover,
 	.nav-container a:hover {
 		background-color: #949494;
-		color: black;
+		color: #800000;
 	}
 
-	#solution-ul,
+	#solution-ul {
+		padding: 0;
+		margin: 0;
+	}
+
 	#solution-dd {
 		padding: 0;
+		margin: 0 0.5em 0 0;
 	}
 
 	#solution-ul a li:hover {
@@ -259,12 +273,19 @@ footer {
 		background: red;
 	}
 
+	nav {
+		width: 90%;
+		margin: 0 5%;
+		padding: 5% 0;
+	}
+
 	.nav-container p {
 		display: block;
 		text-align: center;
 		font-size: 1.75em;
-		padding: 1.5%;
+		padding: 1.5% 0;
 		width: 90%;
+		margin: 0 5%;
 		/*display: none;*/
 	}
 
