@@ -101,7 +101,7 @@ nav a:active {
 .head-img-container {
 	height: 20em;
 	overflow: hidden;
-	margin: none;
+	margin: 0;
 	width: 100%;
 }
 
@@ -280,7 +280,7 @@ footer {
 
 	.left-col,
 	.right-col {
-		display: static;
+		position: static;
 		float: none;
 	}
 

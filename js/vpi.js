@@ -1,44 +1,59 @@
+$(document).ready(function () {
 
-$(document).ready(function(){
+    /*Full-Size Load Width */
+    //On Load
+
+    if ($(this).width() >= 726) {
+
+        $("#solution-ul").on("mouseenter", function () {
+            $("#solution-dd").show();
+        });
+        $("#solution-ul").on("mouseleave", function () {
+            $("#solution-dd").hide();
+        });
+    }
+
+    //On Resize
+    $(window).resize(function () {
+        if ($(this).width() >= 726) {
+
+            $("#solution-ul").on("mouseenter", function () {
+                $("#solution-dd").show();
+            });
+            $("#solution-ul").on("mouseleave", function () {
+                $("#solution-dd").hide();
+            });
+        }
+    });
 
 
-$(window).resize(function() {
-    if( $(this).width() > 740 ) {
-        // code
+    /* Show Soluiton SubmMenu For Mobile*/
+    //On Load
+    if ($(this).width() < 726) {
+        $("#solution-dd").show();
+    }
 
-	/* drop down for "solutions"*/
-			$("#solution-ul").on("mouseenter", function(){
-				$("#solution-dd").show();
-			});
-			$("#solution-ul").on("mouseleave", function(){
-				$("#solution-dd").hide();
-			});
-		}
-	});
 
-/*
-	$("#solution-dd").on("mouseenter", function(){
-		$("#solution-dd").show();
-	});
-	$("#solution-dd").on("mouseleave", function(){
-		$("#solution-dd").hide();
-	});
-*/
-	/* drop down for mobile menu*/
-	$(".hamburger").on("click", function(){
-		$("nav").toggle();
-	});
-	/*
-	$("#menu-solution").on("mouseleave", function(){
-		$("#solution-dd").hide();
-	});
+  //On Resize
+  $(window).resize(function () {
+      if ($(this).width() < 726) {
+          $("#solution-dd").show();
+      }
+  });
 
-	$("#solution-dd").on("mouseenter", function(){
-		$("#solution-dd").show();
-	});
-	$("#solution-dd").on("mouseleave", function(){
-		$("#solution-dd").hide();
-	});
-	*/
+  $(window).resize(function () {
+      if ($(this).width() >= 726) {
+          $("#solution-dd").hide();
+      }
+  });
+
+
+
+
+/* Hamburger drop down for mobile menu*/
+$(".hamburger").on("click", function () {
+    $("nav").toggle();
+    $("#solution-dd").show();
+});
 
 });
