@@ -83,6 +83,7 @@ nav a:active {
 	position: absolute;
 	z-index: 1;
 	background: #F2F2F2;
+	box-shadow: 2px 2px 3px #949494;
 	padding: 0.5em 0 0 0;
 	margin: 0 0 0 0;
 }
@@ -91,8 +92,16 @@ nav a:active {
 	padding: 0.15em 0.5em 0.15em 0.5em;
 }
 
+#solution-dd li a {
+	display: block;
+}
+
 #solution-dd li:hover {
 	background: #949494;
+}
+
+#solution-dd li:hover a {
+	color: #800000;
 }
 
 /*   ---    Header Image   ---   ---   */
@@ -191,6 +200,10 @@ footer {
 		width: 20%;
 	}
 
+	.hamburger:hover {
+		cursor: pointer;
+	}
+
 	.ham-line {
 		height: 2px;
 		width: 10px;
@@ -219,6 +232,7 @@ footer {
 		padding: 0;
 		text-align: right;
 		background: #E9E9E9;
+		box-shadow: 2px 2px 3px #949494;
 	}
 
 	#home .nav-container {
@@ -237,6 +251,10 @@ footer {
 		margin: 0;
 	}
 
+	#solution-ul li a {
+		display: block;
+	}
+
 	#solution-dd {
 		padding: 0;
 		margin: 0 0.5em 0 0;
@@ -252,7 +270,7 @@ footer {
 	}
 }
 
-
+/* CEll PHONE SIZE */
 @media screen and (max-width: 500px) {
 
 	#logo {
@@ -275,7 +293,7 @@ footer {
 
 	nav {
 		width: 90%;
-		margin: 0 5%;
+		margin: 0 5% 1% 5%;
 		padding: 5% 0;
 	}
 
@@ -287,6 +305,19 @@ footer {
 		width: 90%;
 		margin: 0 5%;
 		/*display: none;*/
+	}
+
+	#solution-ul li a {
+		display: block;
+		text-align: center;
+		font-size: 1.75em;
+		padding: 1.5% 0;
+		width: 90%;
+		margin: 0 5%;
+	}
+
+	#solution-dd li a {
+		font-size: 1.5em;
 	}
 
 	#home .head-img-text {

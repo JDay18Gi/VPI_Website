@@ -18,4 +18,20 @@ $(document).ready(function () {
       $("nav").toggle();
       $("#solution-dd").show();
     });
+
+  $(window).resize(function () {
+      if ($(this).width() >= 726) {
+          $("nav").show();
+          $("#solution-dd").hide();
+      }
   });
+
+  $(window).resize(function () {
+      if ($(this).width() < 726) {
+          $("nav").hide();
+      }
+  });
+
+
+});
+
