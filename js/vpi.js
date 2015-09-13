@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    /*Full-Size Load*/
+    /*Full-Size Drop-Down*/
         $("#solution-ul").on("mouseenter", function () {
           if ($(window).width() > 720) {
               $("#solution-dd").show();
@@ -19,6 +19,7 @@ $(document).ready(function () {
       $("#solution-dd").show();
     });
 
+  /* Full-Screen Show Nav Bar & Hide DD*/
   $(window).resize(function () {
       if ($(this).width() >= 726) {
           $("nav").show();
@@ -26,6 +27,7 @@ $(document).ready(function () {
       }
   });
 
+  /* Mobile Hide Nav*/
   $(window).resize(function () {
       if ($(this).width() < 726) {
           $("nav").hide();
