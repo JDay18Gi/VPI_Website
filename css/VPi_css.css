@@ -177,6 +177,22 @@ main p {
 	line-height: 1.65em;
 }
 
+main ul,
+main ol {
+	list-style-type: circle;
+	font-size: 1.1em;
+	margin: 1em 1em 1em 1em;
+	color: #797979;
+	margin-bottom: 0.5em;
+	line-height: 1.35em;
+}
+
+main li,
+main ol {
+	padding-bottom: 0.75em;
+
+}
+
 .centered {
 	text-align: center;
 }
@@ -222,10 +238,9 @@ h4 {
 	font-size: 0.9em;
 	margin-left: 3em;
 	color: #797979;
-
-
-
 }
+
+
 
 /*   ---    Footer     ---   ---   */
 /*   ---    Footer     ---   ---   */
@@ -353,6 +368,11 @@ footer {
 		position: static;
 	}
 
+	.quote {
+		width: 75%;
+		margin-left: 25%;
+	}
+
 	/* Mobile Header Image */
 
 	#other .head-img-container img {
@@ -431,6 +451,14 @@ footer {
 	#home main {
 		margin-top: -30%;
 	}
+
+/*CELL Main Section*/
+
+	.quote {
+		width: 90%;
+		margin-left: 10%;
+	}
+
 
 	.left-col,
 	.right-col {
